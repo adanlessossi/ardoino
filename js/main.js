@@ -5,3 +5,9 @@
         e = function() { t() };
     e()
 }();
+
+function getCalendar() {
+
+    window.location.href = "./ride.html";
+}
+document.getElementById("anmelden").onclick = getCalendar;

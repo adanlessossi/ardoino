@@ -2375,6 +2375,63 @@ img {
     }
 }
 
+
+/*kkfkfdkfsdsdfdsfklkl */
+
+.page-calendar .site-header {
+    position: relative
+}
+
+.page-calendar .site-header .title {
+    background: url(../images/haus1.jpg) no-repeat top;
+    background-size: cover;
+    padding-bottom: 70.2753441802%;
+    margin: 0;
+    text-indent: -999em;
+    position: relative
+}
+
+@media screen and (min-width:75em) {
+    .page-calendar .site-header .title:after {
+        background: -webkit-linear-gradient(top, transparent, rgba(243, 8, 85, .85) 99%, rgba(245, 8, 86, .85));
+        background: linear-gradient(180deg, transparent 0, rgba(243, 8, 85, .85) 99%, rgba(245, 8, 86, .85));
+        content: '';
+        height: 3.75rem;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0
+    }
+}
+
+.page-calendar .konto-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    border: 1px solid transparent;
+    border-radius: 1.25rem;
+    color: #f50856;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    padding: .3125rem 1.5625rem;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-weight: 700
+}
+
+@media screen and (min-width:40em) {
+    .page-calendar .konto-button {
+        bottom: 22%
+    }
+}
+
+
+/**kfkfkfkfkdf*/
+
 .home-about {
     background: #f50856;
     color: #fff;

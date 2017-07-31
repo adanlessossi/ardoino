@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-    <title>Wild Rydes</title>
+    <title>Ardoino88</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,24 +13,35 @@
 
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/ride.css">
-    <link rel="stylesheet" href="/css/message.css">
+    <link rel="stylesheet" href="css/ride.css">
+    <link rel="stylesheet" href="css/message.css">
+
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr.js"></script>
 </head>
 
-<body>
+<body class="page-calendar">
 
-    <div class="info panel panel-default">
-        <div class="panel-heading">
-            <div class="dropdown pull-right">
-                <button id="accountLink" class="btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <header class="site-header">
+        <h1 class="title">Ardoino88</h1>
+    </header>
+
+    <section>
+        <div class="info panel panel-default">
+            <div class="panel-heading">
+                <div class="dropdown pull-right">
+                    <button id="accountLink" class="btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Konto <span class="caret"></span>
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="accountLink">
-                    <li><a id="signOut" href="#">Abmelden</a></li>
-                </ul>
+                    <ul class="dropdown-menu" aria-labelledby="accountLink">
+                        <li><a id="signOut" href="#">Abmelden</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <div id="noApiMessage" class="configMessage" style="display: none;">
         <div class="backdrop"></div>
@@ -60,11 +71,9 @@
 
     <div id="main">
         <div id="calendar">
-            <div class="media">
-                <div class="row column medium-10 large-7 xlarge-5">
-                    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showTz=0&amp;height=300&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=faraldi.tovo%40gmail.com&amp;color=%231B887A&amp;ctz=Europe%2FZurich" style="border:solid 1px #777; margin-top: 50px;"
-                        width="800" height="600" frameborder="0" scrolling="no"></iframe>
-                </div>
+            <div class="row column medium-10 large-7 xlarge-5">
+                <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showTz=0&amp;height=300&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=faraldi.tovo%40gmail.com&amp;color=%231B887A&amp;ctz=Europe%2FZurich" style="border:solid 1px #777; margin-top: 50px;"
+                    width="800" height="600" frameborder="0" scrolling="no"></iframe>
             </div>
         </div>
     </div>
@@ -86,6 +95,26 @@
         </div>
     </div>
 
+    <footer class="site-footer">
+        <div class="row column">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="wegbeschreibung.html">Wegbeschreibung</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="hausordnung.html">Hausordnung &amp; Dokumente</a></li>
+                    <li><a href="about.html">Über uns</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="row column">
+            <div class="footer-legal">
+                ICDC, Innovativ Cloud Design &amp; Compute &copy; All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
 
     <script src="js/vendor/jquery-3.1.0.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
@@ -93,7 +122,9 @@
     <script src="js/vendor/amazon-cognito-identity.min.js"></script>
     <script src="js/config.js"></script>
     <script src="js/cognito-auth.js"></script>
-    <script src="js/ride.js"></script>
+    <!--<script src="js/ride.js"></script> -->
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
