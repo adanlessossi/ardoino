@@ -2429,6 +2429,28 @@ img {
     }
 }
 
+.home-desc {
+    background: #f50856;
+    color: #fff;
+    padding: 5rem 0;
+    text-align: left;
+    margin-bottom: 10rem 0
+}
+
+.ordung-normal {
+    font-weight: normal;
+}
+
+.verbindung {
+    font-weight: normal;
+    font-size: 70%;
+}
+
+.verbindung .table .tr .td {
+    table-layout: auto;
+    width: 100%;
+}
+
 
 /**kfkfkfkfkdf*/
 
