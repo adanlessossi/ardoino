@@ -1,11 +1,11 @@
-/*global WildRydes _config*/
+/*global Ardoino _config*/
 
-var WildRydes = window.WildRydes || {};
-WildRydes.map = WildRydes.map || {};
+var Ardoino = window.Ardoino || {};
+Ardoino.map = Ardoino.map || {};
 
 (function calendarScopeWrapper($) {
     var authToken;
-    WildRydes.authToken.then(function setAuthToken(token) {
+    Ardoino.authToken.then(function setAuthToken(token) {
         if (token) {
             authToken = token;
         } else {
@@ -16,9 +16,9 @@ WildRydes.map = WildRydes.map || {};
         window.location.href = '/signin.html';
     });
 
-    function requestCalendar(pickupLocation) {
+    function requestCalendar() {
         $.ajax({
-            method: 'POST',
+            method: 'GET',
             url: _config.api.invokeUrl + '/calendar',
             headers: {
                 Authorization: authToken
@@ -27,7 +27,7 @@ WildRydes.map = WildRydes.map || {};
             contentType: 'application/json',
             success: completeRequest,
             error: function ajaxError(jqXHR, textStatus, errorThrown) {
-                console.error('Error requesting ride: ', textStatus, ', Details: ', errorThrown);
+                console.error('Error requesting the Ardoino calendar: ', textStatus, ', Details: ', errorThrown);
                 console.error('Response: ', jqXHR.responseText);
                 alert('An error occured when requesting your calendar:\n' + jqXHR.responseText);
             }

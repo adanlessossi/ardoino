@@ -1,6 +1,6 @@
-/*global WildRydes _config AmazonCognitoIdentity AWSCognito*/
+/*global Ardoino _config AmazonCognitoIdentity AWSCognito*/
 
-var WildRydes = window.WildRydes || {};
+var Ardoino = window.Ardoino || {};
 
 (function scopeWrapper($) {
     var signinUrl = '/signin.html';
@@ -25,11 +25,40 @@ var WildRydes = window.WildRydes || {};
         AWSCognito.config.region = _config.cognito.region;
     }
 
-    WildRydes.signOut = function signOut() {
+    Ardoino.signOut = function signOut() {
         userPool.getCurrentUser().signOut();
     };
 
-    WildRydes.authToken = new Promise(function fetchCurrentAuthToken(resolve, reject) {
+    function getUserToken(currentUser) {
+        return new Promise((resolve, reject) => {
+            currentUser.getSession(function(err, session) {
+                if (err) {
+                    reject(err)
+                    return
+                }
+                resolve(session.getIdToken().getJwtToken())
+            })
+        })
+    }
+
+    function userToken() {
+        return new Promise((resolve, reject) => {
+            var me = userPool.getCurrentUser()
+            if (me === null) {
+                reject('No user found')
+            } else {
+                resolve(getUserToken(me))
+            }
+        })
+    }
+
+    function withToken() {
+        return userToken().catch(err => {
+            return Promise.reject('No user found')
+        })
+    }
+
+    Ardoino.authToken = new Promise(function fetchCurrentAuthToken(resolve, reject) {
         var cognitoUser = userPool.getCurrentUser();
 
         if (cognitoUser) {
@@ -46,7 +75,6 @@ var WildRydes = window.WildRydes || {};
             resolve(null);
         }
     });
-
 
     /*
      * Cognito User Pool functions

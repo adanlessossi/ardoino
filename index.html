@@ -3,14 +3,16 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ardoino88</title>
-
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/main.css">
 
     <script src="js/vendor/modernizr.js"></script>
+
+    <title>Ardoino88</title>
 </head>
 
 <body class="page-home">
@@ -20,15 +22,14 @@
         <nav class="site-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="wegbeschreibung.html">Wegbeschreibung</a></li>
-                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="photogalerie.html">Photogalerie</a></li>
+                <li><a href="guestbook.html">Gastebuch</a></li>
                 <li><a href="hausordnung.html">Hausordnung &amp; Dokumente</a></li>
                 <li><a href="about.html">Über uns</a></li>
-                <!--<li><a href="apply.html">Anmelden</a></li> -->
             </ul>
         </nav>
         <button type="button" class="btn-menu"><span>Menu</span></button>
-        <a class="home-button" href="/register.html">Ferienkalender</a>
+        <a class="home-button" href="../register.html">Anmelden</a>
     </header>
 
     <section class="home-about">
@@ -70,18 +71,10 @@
             <h2 class="section-title">Kalender ansehen</h2>
 
             <p class="content">Um der Kalender des Ferienhaus Ardoino88 zu sehen müssen Sie sich anmelden!</p>
-            <form onsubmit="ride.html">
+            <form onsubmit="calendar.html">
                 <input type="email" placeholder="Deine Email Adresse">
                 <button type="button" id="anmelden">Kalendarsicht</button>
             </form>
-
-            <div class="social">
-                <a class="icon-fb" href="">Facebook</a>
-                <a class="icon-tw" href="">Twitter</a>
-                <a class="icon-ig" href="">Instagram</a>
-                <a class="icon-wc" href="">Wechat</a>
-                <a class="icon-wb" href="">Weibo</a>
-            </div>
         </div>
     </section>
 
@@ -101,12 +94,11 @@
             <nav class="footer-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="wegbeschreibung.html">Wegbeschreibung</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="photogalerie.html">Photogalerie</a></li>
+                    <li><a href="guestbook.html">Gastebuch</a></li>
                     <li><a href="hausordnung.html">Hausordnung &amp; Dokumente</a></li>
                     <li><a href="about.html">Über uns</a></li>
 
-                    <!-- <li><a href="apply.html">Apply</a></li> -->
                 </ul>
             </nav>
         </div>
@@ -121,6 +113,13 @@
     <script src="js/vendor.js"></script>
 
     <script src="js/main.js"></script>
+
+    <script src="/js/jquery-3.1.1.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/aws-sdks/amazon-cognito-sdk.v1.16.0.min.js"></script>
+    <script src="/aws-sdks/amazon-cognito-identity.v1.16.0.min.js"></script>
+    <script src="/js/cognito-utils.js"></script>
+    <script src="/js/config.js"></script>
 </body>
 
 </html>
