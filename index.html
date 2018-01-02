@@ -1,125 +1,517 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <script src="js/vendor/modernizr.js"></script>
-
-    <title>Ardoino88</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Ardoino 88</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page-home">
+<body>
 
-    <header class="site-header">
-        <h1 class="title">Ardoino88</h1>
-        <nav class="site-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="photogalerie.html">Photogalerie</a></li>
-                <li><a href="guestbook.html">Gastebuch</a></li>
-                <li><a href="hausordnung.html">Hausordnung &amp; Dokumente</a></li>
-                <li><a href="about.html">Über uns</a></li>
-            </ul>
-        </nav>
-        <button type="button" class="btn-menu"><span>Menu</span></button>
-        <a class="home-button" href="../register.html">Anmelden</a>
-    </header>
+    <!-- Start your project here-->
+    <!--Main Navigation-->
+    <header>
 
-    <section class="home-about">
-        <div class="row column large-9 xlarge-6 xxlarge-4">
-            <h2 class="section-title">Ferienhaus Ardoino 88</h2>
-            <p class="content">
-                Tovo Faraldi ist ein kleines, mittelalterisches Dorf oberhalb San Bartolomeo al Mare an der ligurischen Küste italiens.
-            </p>
-            <ul class="home-desc">
-                Das Ferdienhaus beinhaltet:
-                <li>Die Wohnung​: im Hochparterre: Terrasse, Ess- / Aufenthaltsraum, Küche, Schlafzimmer (Bett 140 cm), Dusche, WC, Réduit. 1. Stock: Schlafzimmer (Bett 140 cm), Wohnzimmer, Cheminée und Balkon. Dachstock: einfacher Schlafplatz (Matratze am
-                    Boden, 140 cm).</li>
-                <li>Studio​ im Tiefparterre, bestehend aus einem Schlaf- / Wohnraum (Bettsofa 140 cm), Badewanne mit Dusche und WC.</li>
-                <li>Das Briefkastenhäuschen​. Darin befinden sich die Stühle für die Terrasse, Sonnenschirme, Liegestühle etc
-                </li>
-                <li>Der obere Garten​, wo das Briefkastenhäuschen steht und der auch zur Terrasse mit dem Wohnungseingang führt.</li>
-                <li>Der mittlere Garten​, der sich östlich an den oberen Garten anschliesst und über eine Treppe mit dem ● unteren Garten​ verbunden ist. Von hier aus führt eine Wendeltreppe auf die Terrasse hoch. Unter der Terrasse ist ein Ziehbrunnen. Hinten
-                    links der Eingang zum Keller.</li>
-                <li>Der Keller​ mit dem Boiler für das Studio, einem zweiten Kühlschrank, und einer (von drei) Hauptsicherungen.
-                </li>
-            </ul>
-        </div>
-    </section>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark indigo fixed-top scrolling-navbar">
+            <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar"> -->
+            <div class="container">
 
-    <section class="home-story">
-        <div class="row column large-9 xlarge-6 xxlarge-4">
-            <h2 class="section-title">Wie erreichen Sie uns?</h2>
-            <p class="content">
-                Das Ferienhaus Ardoino88 ist 15 Autominuten von der Küste entfernt. Es gibt auch einen Bus, der 4 Mal täglich verkehrt. Mehr erfahren Sie auf der Seite <a href="hausordnung.html">Dokumente</a>.
-            </p>
-            <p class="content">
-                Preis pro Woche: 300 Euro + 50 Euro Nachreinigung. Mehr dazu erfahren Sie <a href="hausordnung.html">hier</a>.
-            </p>
-        </div>
-    </section>
+                <!-- Navbar brand -->
+                <a class="navbar-brand" href="#"></a>
 
-    <section class="home-sign-up">
-        <div class="row column">
-            <h2 class="section-title">Kalender ansehen</h2>
+                <!-- Collapse button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
-            <p class="content">Um der Kalender des Ferienhaus Ardoino88 zu sehen müssen Sie sich anmelden!</p>
-            <form onsubmit="calendar.html">
-                <input type="email" placeholder="Deine Email Adresse">
-                <button type="button" id="anmelden">Kalendarsicht</button>
-            </form>
-        </div>
-    </section>
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-    <section class="home-quote">
-        <div class="row column medium-8 xxlarge-6">
-            <div class="quote-wrap">
-                <div class="quote">
-                    “Einfach traumhaft!”
+                    <!-- Links -->
+                    <ul class="navbar-nav mr-auto smooth-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#intro">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#best-features">Erlebnis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#examples">Examples</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Photogallerie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Über uns</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="calendar.html">Kalendar</a>
+                        </li>
+                    </ul>
+                    <!-- Links -->
                 </div>
-                <div class="quoter">- zufriedener Ardoino88 Gast</div>
+                <!-- Collapsible content -->
+
+            </div>
+        </nav>
+        <!--/.Navbar-->
+
+        <!--Mask-->
+        <div id="intro" class="view hm-black-strong">
+
+            <div class="container-fluid full-bg-img d-flex align-items-center justify-content-center">
+
+                <div class="row d-flex justify-content-center">
+
+                    <div class="col-md-10 text-center">
+
+                        <!-- Heading -->
+                        <h2 class="display-3 font-bold white-text mb-2">Ferienhaus Tovo Faraldi</h2>
+
+                        <!-- Divider -->
+                        <hr class="hr-light">
+
+                        <!-- Description -->
+                        <h4 class="white-text my-4">Tovo Faraldi ist ein kleines, mittelalterisches Dorf oberhalb San Bartolomeo al Mare an der ligurischen Küste italiens.</h4>
+                        <a class="btn btn-deep-orange" href="register.html#register">mehr dazu..</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!--/.Mask-->
+
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="mt-5" id="top-section">
+
+        <div class="container">
+
+            <!--Section: Natur Erlebnis-->
+            <section id="best-features" class="text-center">
+
+                <!-- Heading -->
+                <h2 class="mb-4 font-weight-bold">Natur Erlebnis</h2>
+
+                <!--Grid row-->
+                <div class="row d-flex justify-content-center mb-4">
+
+                    <!--Grid column-->
+                    <div class="col-md-8">
+
+                        <!-- Description -->
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptate hic provident nulla repellat facere esse molestiae ipsa labore porro minima quam quaerat rem, natus repudiandae debitis est sit pariatur.</p>
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-4 mb-5">
+                        <i class="fa fa-camera-retro fa-4x orange-text"></i>
+                        <h4 class="my-4 font-weight-bold">Erfahren</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-4 mb-1">
+                        <i class="fa fa-heart fa-4x orange-text"></i>
+                        <h4 class="my-4 font-weight-bold">Glücklichkeit</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-4 mb-1">
+                        <i class="fa fa-bicycle fa-4x orange-text"></i>
+                        <h4 class="my-4 font-weight-bold">Abenteuer</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+            </section>
+            <!--Section: Natur Erlebnis-->
+
+            <hr class="my-5">
+
+            <!--Section: Examples-->
+            <section id="examples" class="text-center">
+
+                <!-- Heading -->
+                <h2 class="mb-5 font-weight-bold">Beispiele</h2>
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 mb-4">
+
+                        <div class="view overlay hm-white-slight z-depth-1-half">
+                            <img src="img/tovo/diano_beach.jpg" class="img-fluid" alt="">
+                            <div class="mask"></div>
+                        </div>
+
+                        <h4 class="my-4 font-weight-bold">Heading</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4">
+
+                        <div class="view overlay hm-white-slight z-depth-1-half">
+                            <img src="img/tovo/terrasse.jpg" class="img-fluid" alt="">
+                            <div class="mask"></div>
+                        </div>
+
+                        <h4 class="my-4 font-weight-bold">Heading</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4">
+
+                        <div class="view overlay hm-white-slight z-depth-1-half">
+                            <img src="img/tovo/haus3.jpg" class="img-fluid" alt="">
+                            <div class="mask"></div>
+                        </div>
+
+                        <h4 class="my-4 font-weight-bold">Heading</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 mb-4">
+
+                        <div class="view overlay hm-white-slight z-depth-1-half">
+                            <img src="img/tovo/garten3.jpg" class="img-fluid" alt="">
+                            <div class="mask"></div>
+                        </div>
+
+                        <h4 class="my-4 font-weight-bold">Heading</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4">
+
+                        <div class="view overlay hm-white-slight z-depth-1-half">
+                            <img src="img/tovo/garten4.jpg" class="img-fluid" alt="">
+                            <div class="mask"></div>
+                        </div>
+
+                        <h4 class="my-4 font-weight-bold">Heading</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4">
+
+                        <div class="view overlay hm-white-slight z-depth-1-half">
+                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/nature/6-col/img%20(69).jpg" class="img-fluid" alt="">
+                            <div class="mask"></div>
+                        </div>
+
+                        <h4 class="my-4 font-weight-bold">Heading</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+            </section>
+            <!--Section: Examples-->
+
+            <hr class="my-5">
+
+            <!--Section: Gallery-->
+            <section id="gallery">
+
+                <!-- Heading -->
+                <h2 class="mb-5 font-weight-bold text-center">Photogallerie</h2>
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+
+                        <!--Carousel Wrapper-->
+                        <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+                            <!--Indicators-->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+                                <li data-target="#carousel-example-1z" data-slide-to="3"></li>
+                                <li data-target="#carousel-example-1z" data-slide-to="4"></li>
+                                <li data-target="#carousel-example-1z" data-slide-to="5"></li>
+                                <li data-target="#carousel-example-1z" data-slide-to="6"></li>
+                                <li data-target="#carousel-example-1z" data-slide-to="7"></li>
+                                <li data-target="#carousel-example-1z" data-slide-to="8"></li>
+                                <li data-target="#carousel-example-1z" data-slide-to="9"></li>
+                                <li data-target="#carousel-example-1z" data-slide-to="10"></li>
+                            </ol>
+                            <!--/.Indicators-->
+                            <!--Slides-->
+                            <div class="carousel-inner z-depth-1-half" role="listbox">
+                                <!--First slide-->
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="img/tovo/borghetto1.jpg" alt="First slide">
+                                </div>
+                                <!--/First slide-->
+                                <!--Second slide-->
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/tovo/borghetto2.jpg" alt="Second slide">
+                                </div>
+                                <!--/Second slide-->
+                                <!--Third slide-->
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/tovo/borghetto3.jpg" alt="Third slide">
+                                </div>
+                                <!--/Third slide-->
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/tovo/borghetto4.jpg" alt="Third slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/tovo/borghetto5.jpg" alt="Third slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/tovo/borghetto6.jpg" alt="Third slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/tovo/cervo1.jpg" alt="Third slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/tovo/cervo2.jpg" alt="Third slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/tovo/cervo3.jpg" alt="Third slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/tovo/cervo4.jpg" alt="Third slide">
+                                </div>
+                            </div>
+                            <!--/.Slides-->
+                            <!--Controls-->
+                            <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                            <!--/.Controls-->
+                        </div>
+                        <!--/.Carousel Wrapper-->
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+
+                        <!--Excerpt-->
+                        <a href="" class="teal-text">
+                            <h6 class="pb-1"><i class="fa fa-heart"></i><strong> Bilder </strong></h6>
+                        </a>
+                        <h4 class="mb-3"><strong>This is title of the news</strong></h4>
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis debitis aut rerum.</p>
+
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis debitis aut rerum.</p>
+                        <p>by <a><strong>Jessica Clark</strong></a>, 26/08/2016</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light">Read more</a>
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+            </section>
+            <!--Section: Gallery-->
+
+            <hr class="my-5">
+
+            <!--Section: Contact-->
+            <section id="map">
+
+                <!--Google map-->
+                <div id="map-container" class="z-depth-1-half map-container" style="height: 400px"></div>
+
+            </section>
+            <!--Section: Contact-->
+
+            <section id="contact" class="section team-section pb-5">
+
+                <!--Section heading-->
+                <h2 class="section-heading h1 pt-4">Über uns</h2>
+                <!--Section description-->
+                <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam.</p>
+
+                <!--Grid row-->
+                <div class="row text-center">
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-r">
+
+                        <div class="avatar">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" class="rounded-circle z-depth-1" alt="First sample avatar image">
+                        </div>
+                        <h4>Magdalena Stranner</h4>
+                        <h6 class="font-bold blue-text">Inhaberin</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-r">
+
+                        <div class="avatar">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded-circle z-depth-1" alt="Second sample avatar image">
+                        </div>
+                        <h4>Michael Stranner</h4>
+                        <h6 class="font-bold blue-text">Inhaber</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-r">
+
+                        <div class="avatar">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" class="rounded-circle z-depth-1" alt="Third sample avatar image">
+                        </div>
+                        <h4>Daniela</h4>
+                        <h6 class="font-bold blue-text">Hauswart</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-r">
+                        <div class="avatar">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(8).jpg" class="rounded-circle z-depth-1" alt="Fourth sample avatar image">
+                        </div>
+                        <h4>Mauro</h4>
+                        <h6 class="font-bold blue-text">Allrounder</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+            </section>
+
+        </div>
+    </main>
+    <!--Main layout-->
+
+    <!--Footer-->
+    <footer class="page-footer blue center-on-small-only unique-color-dark pt-0">
+
+
+
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                Copyright &copy; 2017 Sevenclouds
+
             </div>
         </div>
-    </section>
-
-    <footer class="site-footer">
-        <div class="row column">
-            <nav class="footer-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="photogalerie.html">Photogalerie</a></li>
-                    <li><a href="guestbook.html">Gastebuch</a></li>
-                    <li><a href="hausordnung.html">Hausordnung &amp; Dokumente</a></li>
-                    <li><a href="about.html">Über uns</a></li>
-
-                </ul>
-            </nav>
-        </div>
-
-        <div class="row column">
-            <div class="footer-legal">
-                ICDC, Innovativ Cloud Design &amp; Compute &copy; All Rights Reserved
-            </div>
-        </div>
+        <!--/.Copyright-->
     </footer>
+    <!--/.Footer-->
+    <!-- /Start your project here-->
 
-    <script src="js/vendor.js"></script>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!--Google Maps-->
+    <script src="https://maps.google.com/maps/api/js"></script>
+    <!-- Google Maps settings -->
+    <script>
+        // Regular map
+        function regular_map() {
+            var var_location = new google.maps.LatLng(43.9651929, 8.1003471);
 
-    <script src="js/main.js"></script>
+            var var_mapoptions = {
+                center: var_location,
+                zoom: 14
+            };
 
-    <script src="/js/jquery-3.1.1.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/aws-sdks/amazon-cognito-sdk.v1.16.0.min.js"></script>
-    <script src="/aws-sdks/amazon-cognito-identity.v1.16.0.min.js"></script>
-    <script src="/js/cognito-utils.js"></script>
-    <script src="/js/config.js"></script>
+            var var_map = new google.maps.Map(document.getElementById("map-container"),
+                var_mapoptions);
+
+            var var_marker = new google.maps.Marker({
+                position: var_location,
+                map: var_map,
+                title: "Tovo Faraldi"
+            });
+        }
+
+        // Initialize maps
+        google.maps.event.addDomListener(window, 'load', regular_map);
+    </script>
+
+    <!-- Carousel options -->
+    <script>
+        $('.carousel').carousel({
+            interval: 600,
+        })
+    </script>
 </body>
 
 </html>

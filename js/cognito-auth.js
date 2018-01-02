@@ -29,35 +29,6 @@ var Ardoino = window.Ardoino || {};
         userPool.getCurrentUser().signOut();
     };
 
-    function getUserToken(currentUser) {
-        return new Promise((resolve, reject) => {
-            currentUser.getSession(function(err, session) {
-                if (err) {
-                    reject(err)
-                    return
-                }
-                resolve(session.getIdToken().getJwtToken())
-            })
-        })
-    }
-
-    function userToken() {
-        return new Promise((resolve, reject) => {
-            var me = userPool.getCurrentUser()
-            if (me === null) {
-                reject('No user found')
-            } else {
-                resolve(getUserToken(me))
-            }
-        })
-    }
-
-    function withToken() {
-        return userToken().catch(err => {
-            return Promise.reject('No user found')
-        })
-    }
-
     Ardoino.authToken = new Promise(function fetchCurrentAuthToken(resolve, reject) {
         var cognitoUser = userPool.getCurrentUser();
 
@@ -75,6 +46,7 @@ var Ardoino = window.Ardoino || {};
             resolve(null);
         }
     });
+
 
     /*
      * Cognito User Pool functions
@@ -149,7 +121,7 @@ var Ardoino = window.Ardoino || {};
         signin(email, password,
             function signinSuccess() {
                 console.log('Successfully Logged In');
-                window.location.href = 'ride.html';
+                window.location.href = 'calendar.html#calendar';
             },
             function signinError(err) {
                 alert(err);
@@ -166,7 +138,6 @@ var Ardoino = window.Ardoino || {};
             var cognitoUser = result.user;
             console.log('user name is ' + cognitoUser.getUsername());
             alert('Registration successful. Please check your email for your verification code');
-            window.location.href = 'verify.html';
         };
         var onFailure = function registerFailure(err) {
             alert(err);
