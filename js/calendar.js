@@ -17,9 +17,11 @@ var Ardoino = window.Ardoino || {};
 
     // Register click handler for #request button
     $(function onDocReady() {
+
         Ardoino.authToken.then(function updateAuthMessage(token) {
-            if (!token) {
-                $('#noApiMessage').show();
+            if (token) {
+                displayUpdate('You are authenticated. Click to see your <a href="#authTokenModal" data-toggle="modal">auth token</a>.');
+                $('.authToken').text(token);
             }
         });
 
@@ -27,4 +29,8 @@ var Ardoino = window.Ardoino || {};
             $('#noApiMessage').show();
         }
     });
+
+    function displayUpdate(text) {
+        $('#updates').append($('<li>' + text + '</li>'));
+    }
 }(jQuery));

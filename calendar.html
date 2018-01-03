@@ -83,26 +83,47 @@
 
         </div>
         <!--/.Mask-->
-        <div id="noApiMessage" class="configMessage" style="display: none;">
-            <div class="backdrop"></div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Successfully Authenticated!</h3>
-                </div>
-                <div class="panel-body">
-                    <p>This page is not functional yet because there is no API invoke URL configured in <a href="/js/config.js">/js/config.js</a>. You'll configure this in Module 3.</p>
-                    <p>In the meantime, if you'd like to test the Amazon Cognito user pool authorizer for your API, use the auth token below:</p>
-                    <textarea class="authToken"></textarea>
-                </div>
-            </div>
-        </div>
-
     </header>
     <!--Main Navigation-->
 
     <!--Main layout-->
     <main class="mt-5">
         <div class="container">
+
+            <div class="panel-body">
+                <ol id="updates">
+
+                </ol>
+            </div>
+            <div id="noApiMessage" class="configMessage" style="display: none;">
+                <div class="backdrop"></div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Wilkommen ins Kalendar</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p>Use the auth token below:</p>
+                        <textarea class="authToken"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div id="authTokenModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="authToken">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Your Auth Token</h4>
+                        </div>
+                        <div class="modal-body">
+                            <textarea class="authToken"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <section id="calendar" class="text-center">
                 <h1>Besetzung</h1>
