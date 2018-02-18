@@ -14,6 +14,12 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
+    <script>
+    // MDB Lightbox Init
+    $(function () {
+        $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+    });
+    </script>
 </head>
 
 <body>
@@ -42,7 +48,7 @@
                             <a class="nav-link" href="#intro">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#best-features">Erlebnis</a>
+                            <a class="nav-link" href="#wegbeschreibung">Wegbeschreibung</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#examples">Examples</a>
@@ -102,10 +108,10 @@
         <div class="container">
 
             <!--Section: Natur Erlebnis-->
-            <section id="best-features" class="text-center">
+            <section id="wegbeschreibung" class="text-center">
 
                 <!-- Heading -->
-                <h2 class="mb-4 font-weight-bold">Natur Erlebnis</h2>
+                <h2 class="mb-4 font-weight-bold">Wegbeschreibung</h2>
 
                 <!--Grid row-->
                 <div class="row d-flex justify-content-center mb-4">
@@ -114,7 +120,13 @@
                     <div class="col-md-8">
 
                         <!-- Description -->
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptate hic provident nulla repellat facere esse molestiae ipsa labore porro minima quam quaerat rem, natus repudiandae debitis est sit pariatur.</p>
+                        <p class="grey-text">Von San Bartolomeo über Villa Faraldi (in diesem Fall nicht: Chiappa) her kommend, vor der Kirche links abbiegen.
+                           Dem Weg folgen. Er ist eng, stellenweise steil und Du kannst das Gefühl bekommen, Du seist falsch. Dann bist Du richtig.
+                           Der Weg endet bei einem Parkplatz; dort parkieren. Der grosse Platz bei der Kirche ist übrigens auch ein Parkplatz, der benutzt werden kann.
+                           Den Weg hinunterlaufen, wohl 100 Meter, bis die ziegelrote Pflästerung beginnt. Dort führt links ein "Tunnel" durch ein Haus in den Hof.
+                           Vorne links ist ein kleines Häuschen (1) mit einem Briefkasten, welcher mit "Stranner"  beschriftet ist.
+                           Gegenüber das Gartentööri zur Terrasse. Vor dem Fenster rechts der Türe ist ein Töpfli, dort ist der Schlüssel drin (2). Voilà (3).
+                         </p>
 
                     </div>
                     <!--Grid column-->
@@ -124,32 +136,22 @@
 
                 <!--Grid row-->
                 <div class="row">
+                  <div class="col-md-12">
 
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-5">
-                        <i class="fa fa-camera-retro fa-4x orange-text"></i>
-                        <h4 class="my-4 font-weight-bold">Erfahren</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
-                    </div>
-                    <!--Grid column-->
+                      <div id="mdb-lightbox-ui"></div>
 
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-1">
-                        <i class="fa fa-heart fa-4x orange-text"></i>
-                        <h4 class="my-4 font-weight-bold">Glücklichkeit</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
-                    </div>
-                    <!--Grid column-->
+                      <div class="mdb-lightbox">
 
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-1">
-                        <i class="fa fa-bicycle fa-4x orange-text"></i>
-                        <h4 class="my-4 font-weight-bold">Abenteuer</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
-                    </div>
-                    <!--Grid column-->
+                          <figure >
+                              <a href="img/tovo/wegbeschreibung.png" data-size="1600x1067">
+                                  <img src="img/tovo/wegbeschreibung.png" alt="placeholder" class="img-fluid">
+                              </a>
+                          </figure>
 
-                </div>
+                      </div>
+
+                  </div>
+              </div>
                 <!--Grid row-->
 
             </section>
