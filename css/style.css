@@ -7,7 +7,15 @@ header,
     height: 100%;
 }
 
-#intro {
+#intro-left {
+    background: url("../img/tovo/tovo_front.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#intro-right {
     background: url("../img/tovo/haus1.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;

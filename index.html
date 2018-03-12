@@ -51,10 +51,10 @@
                             <a class="nav-link" href="#wegbeschreibung">Nützliche Infos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#gastbuch">Gästebuch</a>
+                            <a class="nav-link" href="#gallery">Photogallerie</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#gallery">Photogallerie</a>
+                            <a class="nav-link" href="#gastbuch">Gästebuch</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="calendar.html">Kalendar</a>
@@ -69,30 +69,50 @@
         <!--/.Navbar-->
 
         <!--Mask-->
-        <div id="intro" class="view hm-black-strong">
+        <!--Grid row-->
+        <div class="row" id="intro">
 
-            <div class="container-fluid full-bg-img d-flex align-items-center justify-content-center">
+            <!--Grid column-->
+            <div id="intro-left" class="col-md-4 view hm-black-strong">
 
-                <div class="row d-flex justify-content-center">
+                <div class="container-fluid full-bg-img d-flex align-items-center justify-content-center">
 
-                    <div class="col-md-10 text-center">
+                    <div class="row d-flex justify-content-center">
 
-                        <!-- Heading -->
-                        <h2 class="display-3 font-bold white-text mb-2">Ferienhaus Tovo Faraldi</h2>
+                        <div class="text-center">
 
-                        <!-- Divider -->
-                        <hr class="hr-light">
+                            <!-- Description -->
+                            <h4 class="white-text my-4">Tovo Faraldi ist ein kleines, mittelalterlisches Dorf oberhalb San Bartolomeo al Mare an der ligurischen Küste italiens.
 
-                        <!-- Description -->
-                        <h4 class="white-text my-4">Tovo Faraldi ist ein kleines, mittelalterlisches Dorf oberhalb San Bartolomeo al Mare an der ligurischen Küste italiens.</h4>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="intro-right" class=" col-md-8 view hm-black-strong">
+
+                <div class="container-fluid full-bg-img d-flex align-items-center justify-content-center">
+
+                    <div class="row d-flex justify-content-center">
+
+                        <div class="text-center">
+
+                            <!-- Description -->
+                            <h4 class="white-text my-4">... und das ist unser Ferienhaus.</h4>
+
+
+                        </div>
 
                     </div>
 
                 </div>
 
             </div>
-
         </div>
+
         <!--/.Mask-->
 
     </header>
@@ -108,6 +128,8 @@
 
                 <!-- Heading -->
                 <h2 class="mb-5 font-weight-bold">Nützliche Infos</h2>
+
+                <h3 class="font-weight-bold my-4">Wegbeschreibung</h3>
 
                 <!--Grid row-->
                 <div class="row">
@@ -136,14 +158,66 @@
                     </div>
                 </div>
                 <!--Grid row-->
+                </br>
+                <h3 class="font-weight-bold my-4">Dokumente</h3>
                 <div class="row">
 
-                    <div>
-                        <a href="img/tovo/Bedienungsanleitung2017.pdf" download="Bedienungsanleitung_2017.pdf" class="fa fa-file-pdf-o"> Bedienungsanleitung</a>
+                    <div class="col-sm-4">
+                        <span class="fa fa-file-pdf-o"></span>
+                        <a href="img/tovo/Bedienungsanleitung2017.pdf" download="Bedienungsanleitung_2017.pdf" class="font-weight-bold"> Bedienungsanleitung</a>
+
+                        <div class="mask"></div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <span class="fa fa-file-pdf-o"></span>
+                        <a href="img/tovo/Bedienungsanleitung2017.pdf" download="Bedienungsanleitung_2017.pdf" class="font-weight-bold"> Information zur Bedienung vom Haus</a>
+
+                        <div class="mask"></div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <span class="fa fa-file-pdf-o"></span>
+                        <a href="img/tovo/Bedienungsanleitung2017.pdf" download="Bedienungsanleitung_2017.pdf" class="font-weight-bold"> Anleitung zum Pelletofen</a>
 
                         <div class="mask"></div>
                     </div>
                     <!--Grid row-->
+                </div>
+
+                </br>
+
+                <h4>Tarife</h4>
+                <div class="row">
+                    <ul class="fa-ul">
+                        <li><i class="fa-li fa fa-check-square"></i>Hauptwohnung mit Gärten: Pro Woche <span class="badge badge-default">€ 300.--</span> plus Reinigungsgebühr pauschal <span class="badge badge-default">€ 50.--.</span></li>
+                        <li><i class="fa-li fa fa-check-square"></i>Studio als Ergänzung pro Woche <span class="badge badge-default">€ 50.--</span> plus Reinigung <span class="badge badge-default">€ 10.--</span> Wird nicht einzeln vermietet.</li>
+                        <li><i class="fa-li fa fa-check-square"></i>Pro Tag mit Internetbenutzung <span class="badge badge-default">€ 3.--</span> in das Kässeli auf dem Büromöbel geben.</li>
+                    </ul>
+
+                </div>
+                </br>
+
+                <h4>Bankverbindung</h4>
+                <p>Bei der Banküberweisung unbedingt folgende Angaben verwenden: </p>
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <h6>Stranner Michael Joachim</h6>
+                        <h6>via Ardoino 88</h6>
+                        <h6>18010 Villa Faraldi</h6>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <h6>IBAN: IT12 X076 0110 5000 0102 4005 348</h6>
+                        <h6>BIC (SWIFT) BPPIITRRXXX</h6>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <h6>POSTE ITALIANE SPA</h6>
+                        <h6>Europa 175 (viale)</h6>
+                        <h6>00144 Roma</h6>
+                    </div>
                 </div>
 
             </section>
@@ -151,130 +225,17 @@
 
             <hr class="my-5">
 
-            <!--Section: Gästebuch v.2-->
-            <section id="gastbuch">
-
-                <!--Section heading-->
-                <h1 class="mb-5 font-weight-bold">Gästebuch</h1>
-                <!--Section description-->
-                <p>Für</p>
-
-                <!--Carousel Wrapper-->
-                <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-fade" data-ride="carousel" data-interval="false">
-
-                    <!--Slides-->
-                    <div class="carousel-inner" role="listbox">
-                        <!--First slide-->
-                        <div class="carousel-item active">
-
-                            <div class="testimonial">
-                                <!--Avatar-->
-                                <div class="avatar mx-auto">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" class="rounded-circle img-fluid" alt="First sample avatar image">
-                                </div>
-                                <!--Content-->
-                                <p>
-                                    <i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
-                                    cum accusamus eveniet molestias voluptatum inventore laboriosam labore sit, aspernatur praesentium iste impedit quidem dolor veniam.
-                                </p>
-
-                                <h4>anna.deynah@hotmail.com</h4>
-
-                                <!--Review-->
-                                <i class="fa fa-star blue-text"> </i>
-                                <i class="fa fa-star blue-text"> </i>
-                                <i class="fa fa-star blue-text"> </i>
-                                <i class="fa fa-star blue-text"> </i>
-                                <i class="fa fa-star-half-full blue-text"> </i>
-                            </div>
-
-                        </div>
-                        <!--First slide-->
-
-                        <!--Second slide-->
-                        <div class="carousel-item">
-
-                            <div class="testimonial">
-                                <!--Avatar-->
-                                <div class="avatar mx-auto">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg" class="rounded-circle img-fluid" alt="Second sample avatar image">
-                                </div>
-                                <!--Content-->
-                                <p>
-                                    <i class="fa fa-quote-left"></i> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                                    dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore. </p>
-
-                                <h4>maria.kate@bluewin.ch</h4>
-
-                                <!--Review-->
-                                <i class="fa fa-star blue-text"> </i>
-                                <i class="fa fa-star blue-text"> </i>
-                                <i class="fa fa-star blue-text"> </i>
-                                <i class="fa fa-star blue-text"> </i>
-                                <i class="fa fa-star blue-text"> </i>
-                            </div>
-
-                        </div>
-                        <!--Second slide-->
-
-                        <!--Third slide-->
-                        <div class="carousel-item">
-
-                            <div class="testimonial">
-                                <!--Avatar-->
-                                <div class="avatar mx-auto">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle img-fluid" alt="Third sample avatar image">
-                                </div>
-                                <!--Content-->
-                                <p>
-                                    <i class="fa fa-quote-left"></i> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-
-                                <h4>john.doe@gmail.com</h4>
-
-                                <!--Review-->
-                                <i class="fa fa-star blue-text"> </i>
-                                <i class="fa fa-star blue-text"> </i>
-                                <i class="fa fa-star blue-text"> </i>
-                                <i class="fa fa-star blue-text"> </i>
-                                <i class="fa fa-star-o blue-text"> </i>
-                            </div>
-
-                        </div>
-                        <!--Third slide-->
-
-                    </div>
-                    <!--Slides-->
-
-                    <!--Controls-->
-                    <a class="carousel-item-prev left carousel-control" href="#carousel-example-1" role="button" data-slide="prev">
-                        <span class="icon-prev" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-item-next right carousel-control" href="#carousel-example-1" role="button" data-slide="next">
-                        <span class="icon-next" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                    <!--Controls-->
-
-                </div>
-                <!--Carousel Wrapper-->
-
-            </section>
-            <!--Section: Testimonials v.2-->
-            <hr class="my-5">
-
             <!--Section: Gallery-->
             <section id="gallery">
 
                 <!-- Heading -->
-                <h2 class="mb-5 font-weight-bold">Photogallerie</h2>
+                <h3 class="mb-5 font-weight-bold">Photogallerie</h3>
 
                 <!--Grid row-->
                 <div class="row">
 
                     <!--Grid column-->
-                    <div class="col-md-8">
+                    <div>
 
                         <!--Carousel Wrapper-->
                         <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
@@ -349,29 +310,28 @@
                     </div>
                     <!--Grid column-->
 
-                    <!--Grid column-->
-                    <div class="col-md-4">
-
-                        <!--Excerpt-->
-                        <a href="" class="teal-text">
-                            <h6 class="pb-1"><i class="fa fa-heart"></i><strong> Bilder </strong></h6>
-                        </a>
-                        <h4 class="mb-3"><strong>This is title of the news</strong></h4>
-                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis debitis aut rerum.</p>
-
-                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis debitis aut rerum.</p>
-                        <p>by <a><strong>Jessica Clark</strong></a>, 26/08/2016</p>
-                        <a class="btn btn-primary btn-md waves-effect waves-light">Read more</a>
-
-                    </div>
-                    <!--Grid column-->
-
                 </div>
                 <!--Grid row-->
 
             </section>
             <!--Section: Gallery-->
 
+            <hr class="my-5">
+
+            <!--Section: Gästebuch v.2-->
+            <section id="gastbuch">
+
+                <!--Section heading-->
+                <!-- Heading -->
+                <h3 class="mb-5 font-weight-bold">Gästebuch</h3>
+
+                <!--Grid row-->
+                <div class="row">
+                </div>
+
+
+            </section>
+            <!--Section: Testimonials v.2-->
             <hr class="my-5">
     </main>
     <!--Main layout-->
@@ -402,32 +362,7 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
-    <!--Google Maps-->
-    <script src="https://maps.google.com/maps/api/js"></script>
-    <!-- Google Maps settings -->
-    <script>
-        // Regular map
-        function regular_map() {
-            var var_location = new google.maps.LatLng(43.9651929, 8.1003471);
 
-            var var_mapoptions = {
-                center: var_location,
-                zoom: 14
-            };
-
-            var var_map = new google.maps.Map(document.getElementById("map-container"),
-                var_mapoptions);
-
-            var var_marker = new google.maps.Marker({
-                position: var_location,
-                map: var_map,
-                title: "Tovo Faraldi"
-            });
-        }
-
-        // Initialize maps
-        google.maps.event.addDomListener(window, 'load', regular_map);
-    </script>
 
     <!-- Carousel options -->
     <script>
