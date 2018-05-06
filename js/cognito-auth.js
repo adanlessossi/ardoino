@@ -115,7 +115,7 @@ var Ardoino = window.Ardoino || {};
     });
 
     function handleSignin(event) {
-        var email = $('#emailInputSignin').val();
+        var email = $('#emailInputSignin').val(); 
         var password = $('#passwordInputSignin').val();
         event.preventDefault();
         signin(email, password,
